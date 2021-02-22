@@ -3105,7 +3105,7 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   height: 100%;
 }
 .v-light .brand-client .wrapper-client .logo-box .logo-box-inner {
-  background-color: var(--reverse-color);
+  background-color: #ffffff;
 }
 @media only screen and (max-width: 991px) {
   .brand-client .wrapper-client .logo-box {
