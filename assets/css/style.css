@@ -3184,8 +3184,7 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
 }
 @media only screen and (max-width: 767px) {
   .box-seat.box-seat-full .pro-text {
-    right: auto;
-    max-width: 100%;
+    display: none;
   }
 }
 
@@ -4476,6 +4475,11 @@ label {
 @media only screen and (max-width: 400px) {
   .box-info-contact ul li {
     width: 100%;
+  }
+
+  .title-hero {
+    font-size: 28px !important;
+    text-align: left;
   }
 }
 .box-info-contact ul li .text-p:not(:nth-last-child) {
