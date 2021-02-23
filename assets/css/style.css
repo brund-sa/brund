@@ -2243,15 +2243,15 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   background-position: center;
 }
 
-.service-lest-item:nth-child(1):hover h4,
-.service-lest-item:nth-child(3):hover h4,
-.service-lest-item:nth-child(4):hover h4,
-.service-lest-item:nth-child(5):hover h4,
-.service-lest-item:nth-child(6):hover h4   {
+#service__:nth-child(1):hover h4,
+#service__:nth-child(3):hover h4,
+#service__:nth-child(4):hover h4,
+#service__:nth-child(5):hover h4,
+#service__:nth-child(6):hover h4   {
   color: #fff;
 }
 
-.service-lest-item:nth-child(1):hover  {
+#service__:nth-child(1):hover  {
   background: url(https://brund.run/wp-content/uploads/2020/10/servicebanner-1.jpg);
   color: #fff !important;
   padding: 30px 15px ;
@@ -2259,14 +2259,14 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   background-position: center;
 }
 
-.service-lest-item:nth-child(2):hover  {
+#service__:nth-child(2):hover  {
   background: url(https://brund.run/wp-content/uploads/2020/10/servicebanner-2.jpg);
   padding: 30px 15px ;
   background-size: cover;
   background-position: center;
 }
 
-.service-lest-item:nth-child(3):hover  {
+#service__:nth-child(3):hover  {
   background: url(https://brund.run/wp-content/uploads/2020/10/servicebanner-3.jpg);
   color: #fff !important;
   padding: 30px 15px ;
@@ -2274,7 +2274,7 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   background-position: center;
 }
 
-.service-lest-item:nth-child(4):hover  {
+#service__:nth-child(4):hover  {
   background: url(https://brund.run/wp-content/uploads/2020/10/servicebanner-4.jpg);
   color: #fff !important;
   padding: 30px 15px ;
@@ -2282,7 +2282,7 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   background-position: center;
 }
 
-.service-lest-item:nth-child(5):hover  {
+#service__:nth-child(5):hover  {
   background: url(https://brund.run/wp-content/uploads/2020/10/servicebanner-5.jpg);
   color: #fff !important;
   padding: 30px 15px ;
@@ -2290,7 +2290,7 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   background-position: center;
 }
 
-.service-lest-item:nth-child(6):hover  {
+#service__:nth-child(6):hover  {
   background: url(https://brund.run/wp-content/uploads/2020/10/servicebanner-6.jpg);
   color: #fff !important;
   padding: 30px 15px ;
