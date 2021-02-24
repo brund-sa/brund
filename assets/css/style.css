@@ -4472,6 +4472,12 @@ label {
     text-align: left;
   }
 }
+@media only screen and (max-width: 650px) {
+  .work-inner .work-item {
+    width: 100%;
+    margin-bottom: 50px
+  }
+}
 @media only screen and (max-width: 400px) {
   .box-info-contact ul li {
     width: 100%;
