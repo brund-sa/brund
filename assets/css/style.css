@@ -4487,7 +4487,20 @@ label {
     font-size: 28px !important;
     text-align: left;
   }
+
+  .hiddenMobile {
+    display: none;
+  }
+
+  .showMobile{
+    display: block;
+  }
 }
+
+.showMobile{
+  display: hidden;
+}
+
 .box-info-contact ul li .text-p:not(:nth-last-child) {
   margin-bottom: 10px;
 }
