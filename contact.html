@@ -28,11 +28,7 @@
                 emailjs.sendForm('service_03ralcd', 'template_1ym8jix', this)
                     .then(function() {
                         document.getElementById('submittedForm__').style.display = "block";
-                        document.getElementById('1').value=''; 
-                        document.getElementById('2').value=''; 
-                        document.getElementById('3').value=''; 
-                        document.getElementById('4').value=''; 
-                        
+                        document.getElementById('form_name').value=" ";
                     }, function(error) {
                         document.getElementById('submittedForm__err').style.display = "block";
                     });
@@ -224,7 +220,7 @@
                         <div
                             class="content-hero p-relative d-flex align-items-center text-center flex-column h-100 dsn-hero-parallax-title">
                             <p class="subtitle p-relative line-shap  ">
-                                <span class="pl-10 pr-10 background-section dsn-load-animate">Lat's Tock</span>
+                                <span class="pl-10 pr-10 background-section dsn-load-animate">Let's Talk</span>
                             </p>
                             <h1 class="title mt-20 dsn-load-animate">Contact Us</h1>
                         </div>
@@ -279,7 +275,7 @@
 
                                                 <div class="form-group">
                                                     <div class="entry-box">
-                                                        <input id="form_email 2" type="email" name="email"
+                                                        <input id="form_email" type="email" name="email"
                                                             placeholder="E-mail*" required="required"
                                                             data-error="Valid email is required.">
                                                     </div>
@@ -288,7 +284,7 @@
 
                                                 <div class="form-group">
                                                     <div class="entry-box">
-                                                        <input id="form_name 3" type="number" name="number"
+                                                        <input id="form_name" type="number" name="number"
                                                             placeholder="Your number*" required="required"
                                                             data-error="name is required.">
                                                     </div>
@@ -297,7 +293,7 @@
 
                                                 <div class="form-group">
                                                     <div class="entry-box">
-                                                        <textarea id="form_message 4" class="form-control" name="message"
+                                                        <textarea id="form_message" class="form-control" name="message"
                                                             placeholder="Anything you want to say"
                                                             data-error="Please,leave us a message."></textarea>
                                                     </div>
