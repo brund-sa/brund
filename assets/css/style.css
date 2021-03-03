@@ -2713,9 +2713,9 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   display: block;
 }
 .accordion__item {
-  margin-bottom: 30px;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 30px;
+  /* margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-color); */
+  padding-bottom: 15px;
 }
 .accordion__item:last-of-type {
   margin-bottom: 0;
@@ -2753,6 +2753,7 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   margin-bottom: 0;
 }
 .accordion__question::before {
+  opacity: 0;
   content: "";
   position: absolute;
   display: inline-block;
@@ -2772,6 +2773,7 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
 }
 
 .expanded.accordion__question::before {
+  opacity: 0;
   content: "";
   border: solid var(--theme-color);
   border-width: 0 2px 2px 0;
@@ -3110,7 +3112,7 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   height: 100%;
 }
 .v-light .brand-client .wrapper-client .logo-box .logo-box-inner {
-  background-color: #ffffff;
+  background-color: #ffffff00;
 }
 @media only screen and (max-width: 991px) {
   .brand-client .wrapper-client .logo-box {
@@ -4907,5 +4909,13 @@ body.dsn-show-contact .contact-modal {
 	}
 }
 
+p.sm-title-block {
+  font-size: 1.5rem;
+  font-family: "maison-neue-mono", sans-serif;
+}
 
+.dsn-accordion {
+  padding: 0 20px 30px;
+}
 
+#mapid { height: 500px; }

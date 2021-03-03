@@ -36,6 +36,14 @@
         }
     </script>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>    
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    
     <!-- Font Google -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -233,9 +241,7 @@
 
                     <div class="container root-contact">
                         <div class="full-width">
-                            <div class="map-custom p-absolute w-100 h-100" data-dsn-lat="21.536099"
-                                data-dsn-len="39.173168" data-dsn-zoom="14">
-                            </div>
+                            <div id="mapid"></div>
                         </div>
                         <div class="box-contact-inner section-margin">
                             <div class="row align-items-center">
@@ -606,6 +612,20 @@
     <script src="assets/js/dsn-grid.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
+    <script>
+        var map_marker = new L.icon({iconUrl: './assets/img/map-marker.png'});
+        var mymap = L.map('mapid').setView([21.536108, 39.173181], 13);
+        var marker = L.marker([21.536108, 39.173181],{icon: map_marker}).addTo(mymap);
+        
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            style: 'mapbox://styles/kev-dev-brund/cklthi33j102317roynai7od8',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1Ijoia2V2LWRldi1icnVuZCIsImEiOiJja2x0Y2l3aXEwdjh5MnFtcGEyZWMzZTR1In0.k-eU2a3ePHid0vCKU7ev8A'
+        }).addTo(mymap);
+    </script>
 </body>
 
 </html>
