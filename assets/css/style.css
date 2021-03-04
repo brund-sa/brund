@@ -4919,3 +4919,12 @@ p.sm-title-block {
 }
 
 #mapid { height: 500px; }
+
+
+
+
+@media only screen and (max-width: 1300px) {
+  .content-hero h1.title-hero {
+    text-align: left;
+  }
+}
