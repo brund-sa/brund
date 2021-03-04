@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     
-    <title>Design Grid &#8211; My WordPress Blog</title>
+    <title>KEVIN NISAY MOTHERFUCKER</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Design Grid &raquo; Feed" href="https://www.dsngrid.com/feed/" />
