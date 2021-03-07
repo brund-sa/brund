@@ -36,14 +36,6 @@
     <!-- custom styles (optional) -->
     <link href="assets/css/plugins.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>    
-
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
     
     <!-- Font Google -->
 
@@ -583,7 +575,7 @@
 
                                 <div class="button-box d-flex justify-content-end align-items-center">
                                     <div>
-                                        <a href="contact.html" class="mt-30 effect-ajax dsn-button p-relative">
+                                        <a href="contact.html" class="mt-30 dsn-button p-relative">
                                             <span class="dsn-border-rdu "></span>Contact Us
                                         </a>
                                     </div>
@@ -805,23 +797,6 @@
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/dsn-grid.min.js"></script>
     <script src="assets/js/custom.js"></script>
-
-    
-
-    <script>
-        var map_marker = new L.icon({iconUrl: './assets/img/map-marker.png'});
-        var mymap = L.map('mapid').setView([21.536108, 39.173181], 13);
-        var marker = L.marker([21.536108, 39.173181],{icon: map_marker}).addTo(mymap);
-        
-
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-            style: 'mapbox://styles/kev-dev-brund/cklthi33j102317roynai7od8',
-            id: 'mapbox/streets-v11',
-            tileSize: 512,
-            zoomOffset: -1,
-            accessToken: 'pk.eyJ1Ijoia2V2LWRldi1icnVuZCIsImEiOiJja2x0Y2l3aXEwdjh5MnFtcGEyZWMzZTR1In0.k-eU2a3ePHid0vCKU7ev8A'
-        }).addTo(mymap);
-    </script>
 
 </body>
 
