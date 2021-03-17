@@ -4828,6 +4828,10 @@ body.dsn-show-contact .contact-modal {
 
 ==================================================================*/
 
+.logo-box-inner img {
+  width: 45% !important;
+}
+
 .title-hero {
   position: relative;
   color: var(--heading-color);
@@ -4928,3 +4932,11 @@ p.sm-title-block {
     text-align: left;
   }
 }
+
+@media only screen and (max-width: 786px) {
+  .logo-box-inner img {
+    width: 30% !important;
+  }
+}
+
+
