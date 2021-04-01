@@ -4382,7 +4382,10 @@ header .scroll-d img {
 -------------------------------------------------------- */
 .form-box {
   position: relative;
-  padding: 40px;
+  padding: 65px 50px;
+  box-shadow: 2px 15px 50px 0px rgb(0 0 0 / 0.07);
+  -webkit-box-shadow: 2px 15px 50px 0px rgb(0 0 0 / 0.07);
+  -moz-box-shadow: 2px 15px 50px 0px rgba(0,0,0,0.07);
 }
 @media only screen and (max-width: 575px) {
   .form-box {
@@ -4418,32 +4421,38 @@ header .scroll-d img {
   margin-top: 10px;
   margin-bottom: 0;
   letter-spacing: -0.5px;
+  opacity: 0.6;
 }
 .entry-box input::-webkit-input-placeholder, .entry-box textarea::-webkit-input-placeholder {
   color: var(--font-color);
   font-size: 16px;
   letter-spacing: -0.5px;
+  opacity: 0.6;
 }
 .entry-box input::-moz-placeholder, .entry-box textarea::-moz-placeholder {
   color: var(--font-color);
   font-size: 16px;
   letter-spacing: -0.5px;
+  opacity: 0.6;
 }
 .entry-box input:-ms-input-placeholder, .entry-box textarea:-ms-input-placeholder {
   color: var(--font-color);
   font-size: 16px;
   letter-spacing: -0.5px;
+  opacity: 0.6;
 }
 .entry-box input::-ms-input-placeholder, .entry-box textarea::-ms-input-placeholder {
   color: var(--font-color);
   font-size: 16px;
   letter-spacing: -0.5px;
+  opacity: 0.6;
 }
 .entry-box input::placeholder,
 .entry-box textarea::placeholder {
   color: var(--font-color);
   font-size: 16px;
   letter-spacing: -0.5px;
+  opacity: 0.6;
 }
 .entry-box input {
   height: 100%;
@@ -4829,6 +4838,16 @@ body.dsn-show-contact .contact-modal {
                          ADDITIONAL CSS
 
 ==================================================================*/
+#services, #concern {
+  padding: 15px 30px;
+  margin: 25px 0;
+  font-size: 16px;
+  border: none;
+  box-shadow: 2px 15px 50px 0px rgb(0 0 0 / 15%);
+  -webkit-box-shadow: 2px 15px 50px 0px rgb(0 0 0 / 15%);
+  -moz-box-shadow: 2px 15px 50px 0px rgba(0,0,0,0.15);
+  background: #f9f9f9;
+}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
