@@ -21,14 +21,14 @@
     <meta name="twitter:image:alt" content="Brund | Creative Digital Agency">
     <!--  Title -->
     <title>Brund | Creative Digital Agency</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/integration
             emailjs.init('user_h8EAQCIpjtNfwBVDMwt1s');
         })();
     </script>
-    <script type="text/javascript">
+     <script type="text/javascript">
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -44,7 +44,7 @@
                     });
             });
         }
-    </script>
+    </script> -->
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -229,8 +229,7 @@
     <main class="main-root">
         <div id="dsn-scrollbar">
             <div class="main-content">
-                 <!-- ========== Header Normal ========== -->
-
+                <!-- ========== Header Normal ========== -->
                 <header
                     class="header-page over-hidden p-relative header-padding-top header-padding-bottom dsn-header-animation">
                     <div class="bg-circle-dotted"></div>
@@ -275,24 +274,32 @@
                                             we’re right there. In the middle.
                                         </p>
 
-                                        <form id="contact-form" class="form"
+                                        <form class="form" method="POST" action="https://usebasin.com/f/fbc8faebe835"
                                             data-toggle="validator">
-                                            <input type="hidden" name="contact_number">
                                             <div class="messages"></div>
                                             <div class="input__wrap controls">
                                                 <div class="form-group">
                                                     <div class="entry-box">
-                                                        <input id="form_name 1" type="text" name="name"
-                                                            placeholder="Your name*" value="" required="required"
+                                                        <!-- <label>Your name *</label> -->
+                                                        <input id="form_name" type="text" name="name"
+                                                            placeholder="Type your name" required="required"
                                                             data-error="name is required.">
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
-
                                                 <div class="form-group">
                                                     <div class="entry-box">
+                                                        <!-- <label>Your number </label> -->
+                                                        <input id="form_name" type="number" name="number"
+                                                            placeholder="Mobile/Phone no.">
+                                                    </div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="entry-box">
+                                                        <!-- <label>Your E-Mail *</label> -->
                                                         <input id="form_email" type="email" name="email"
-                                                            placeholder="E-mail*" value="" required="required"
+                                                            placeholder="Type your Email Address" required="required"
                                                             data-error="Valid email is required.">
                                                     </div>
                                                     <div class="help-block with-errors"></div>
@@ -300,35 +307,24 @@
 
                                                 <div class="form-group">
                                                     <div class="entry-box">
-                                                        <input id="form_name" type="number" name="number"
-                                                            placeholder="Your number*" value="" required="required"
-                                                            data-error="name is required.">
-                                                    </div>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <div class="entry-box">
+                                                        <!-- label>What's up?</label> -->
                                                         <textarea id="form_message" class="form-control" name="message"
-                                                            placeholder="Anything you want to say" value="" 
-                                                            data-error="Please,leave us a message."></textarea>
+                                                            placeholder="Tell us about you and the world"></textarea>
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
 
                                                 <div class="text-right">
                                                     <div class="image-zoom w-auto d-inline-block" data-dsn="parallax">
-                                                        <button type="submit" class="dsn-button "  value="Send" >
+                                                        <button type="submit" class="dsn-button ">
                                                             <span class="dsn-border border-color-default"></span>
-                                                            <span class="text-button" >Send Message</span>
+                                                            <span class="text-button">Send Message</span>
 
                                                         </button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
-                                        <div id="submittedForm__">Thank you for sharing your details,<br/> We will get in touch shortly.</div>
-                                        <div id="submittedForm__err">Please fill up the form correctly! 😭</div>
                                     </div>
                                 </div>
 
