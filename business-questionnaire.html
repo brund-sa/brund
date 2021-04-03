@@ -289,27 +289,65 @@
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <div class="entry-box">
+                                                    <div class="">
                                                         <label>7. Which among these services are you interested in?</label><br>
-                                                        <select id="services" name="services" required="required"
-                                                        data-error="This field is required.">
-                                                            <option value="branding">Branding</option>
-                                                            <option value="campaign">Campaign</option>
-                                                            <option value="production">Production</option>
-                                                            <option value="digital">Digital Marketing</option>
-                                                            <option value="events">Events & Exhebitions</option>
-                                                        </select>
+                                                        <label style="display: block;
+                                                        line-height: 40px;
+    margin: 20px 10px;
+">
+                                                            <input type="checkbox" class="option-input checkbox" name="service1"/>
+                                                            Branding
+                                                        </label>
+                                                        <label style="display: block;
+                                                        line-height: 40px;
+    margin: 20px 10px;
+">
+                                                            <input type="checkbox" class="option-input checkbox" name="service2"/>
+                                                            Campaign
+                                                        </label>
+                                                        <label style="display: block;
+                                                        line-height: 40px;
+    margin: 20px 10px;
+">
+                                                            <input type="checkbox" class="option-input checkbox" name="service3"/>
+                                                            Production
+                                                        </label>
+                                                        <label style="display: block;
+                                                        line-height: 40px;
+    margin: 20px 10px;
+">
+                                                            <input type="checkbox" class="option-input checkbox" name="service4"/>
+                                                            Digital Marketing
+                                                        </label>
+                                                        <label style="display: block;
+                                                        line-height: 40px;
+    margin: 20px 10px;
+">
+                                                            <input type="checkbox" class="option-input checkbox" name="service5"/>
+                                                            Events or Exhibitions
+                                                        </label>
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <div class="entry-box">
+                                                    <div class="">
                                                         <label>8. Are you currently facing any business concerns that you wish to solve with us?</label><br>
-                                                        <select id="concern" name="concern" required="required"
-                                                        data-error="This field is required.">
-                                                            <option value="yes">Yes</option>
-                                                            <option value="no">No</option>
-                                                        </select>
+                                                        <div >
+                                                            <label style="display: block;
+                                                        line-height: 40px;
+    margin: 20px 10px;
+">
+                                                                <input type="radio" class="option-input radio" name="radio" />
+                                                                Yes
+                                                            </label>
+                                                            <label style="display: block;
+                                                        line-height: 40px;
+    margin: 20px 10px;
+">
+                                                                <input type="radio" class="option-input radio" name="radio" />
+                                                                No
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -324,50 +362,64 @@
                                                 <div class="form-group">
                                                     <div class="entry-box">
                                                         <label>10. Do you have plans to expand your business into a different market segment or geographic territory? If yes, please list them down</label>
-                                                        <input type="text" name="expand"
+                                                        <input type="text" name="plans-to-expand-business"
                                                             placeholder="Plans to expand your business?">
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
-                                                
                                                 <div class="form-group">
                                                     <div class="entry-box">
-                                                        <label>11. Your name </label>
-                                                        <input id="form_name" type="text" name="name"
-                                                            placeholder="Type your name" required="required"
-                                                            data-error="name is required.">
-                                                    </div>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="entry-box">
-                                                        <label>12. Your number </label>
-                                                        <input id="form_name" type="number" name="number"
-                                                            placeholder="Mobile/Phone no." required="required"
-                                                            data-error="We need your number to contact you">
-                                                    </div>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="entry-box">
-                                                        <label>13. Your E-Mail </label>
-                                                        <input id="form_email" type="email" name="email"
-                                                            placeholder="Type your Email Address" required="required"
-                                                            data-error="Valid email is required.">
-                                                    </div>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <div class="entry-box">
-                                                        <label>14. What is your total project budget?</label>
-                                                        <input type="number" name="budget" required="required"
+                                                        <label>11. What is your total project budget?</label>
+                                                        <input type="number" name="total-project-budget" required="required"
                                                         data-error="This field is required."
                                                             placeholder="Let us know your budget">
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
-
+                                                <div style="
+                                                text-align: center; 
+                                                background-color: black; 
+                                                color: #fff; 
+                                                padding: 15px 30px; 
+                                                cursor: pointer; 
+                                                margin: 30px;" onclick="personalInfoToggle()" id="info__button">
+                                                    Do you want to put your personal info?
+                                                </div>
+                                                <div style="
+                                                text-align: center; 
+                                                background-color: black; 
+                                                color: #fff; 
+                                                padding: 15px 30px; 
+                                                cursor: pointer; 
+                                                margin: 30px;" onclick="personalInfoToggleClose()" id="close__button" class="hidden">
+                                                    Close
+                                                </div>
+                                                <div id="personal-info" class="hidden">
+                                                    <div class="form-group">
+                                                        <div class="entry-box">
+                                                            <label>Your name </label>
+                                                            <input id="form_name" type="text" name="name"
+                                                                placeholder="Type your name">
+                                                        </div>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="entry-box">
+                                                            <label>Your number </label>
+                                                            <input id="form_name" type="number" name="number"
+                                                                placeholder="Mobile/Phone no.">
+                                                        </div>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="entry-box">
+                                                            <label>Your E-Mail </label>
+                                                            <input id="form_email" type="email" name="email"
+                                                                placeholder="Type your Email Address">
+                                                        </div>
+                                                        <div class="help-block with-errors"></div>
+                                                    </div>
+                                                </div>
                                                 <div class="text-right">
                                                     <div class="image-zoom w-auto d-inline-block" data-dsn="parallax">
                                                         <button type="submit" class="dsn-button ">
@@ -595,6 +647,36 @@
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/dsn-grid.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+        
+        const element = document.getElementById("personal-info");
+        const closeBtn = document.getElementById("close__button");
+        const infoBtn = document.getElementById("info__button");
+
+        const personalInfoToggle = function () {
+
+            element.classList.remove("hidden");
+            element.classList.add("show");
+
+            closeBtn.classList.remove("hidden");
+            closeBtn.classList.add("show");
+
+            infoBtn.classList.add("hidden")
+
+        }
+
+        const personalInfoToggleClose = function () {
+
+            element.classList.add("hidden");
+            element.classList.remove("show");
+
+            closeBtn.classList.add("hidden");
+            closeBtn.classList.remove("show");
+
+            infoBtn.classList.remove("hidden")
+
+        }
+    </script>
 </body>
 
 </html>
