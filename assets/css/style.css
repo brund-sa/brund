@@ -4964,23 +4964,23 @@ input[type=number] {
   } to {
     opacity: 1;
   }
- }
+}
 
- .service-description {
+.service-description {
     font-family: "maison-neue-mono";
- }
+}
 
 .service-p{
   font-size: 2rem;
 }
 
- .service-description .right-content {
+.service-description .right-content {
     font-size: 1rem;
     font-weight: normal;
     width: 60%;
- }
+}
 
- .title-block {
+.title-block {
   letter-spacing: 1px;
   font-weight: 100;
   font-size: 17px;
