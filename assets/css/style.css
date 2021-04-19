@@ -2309,7 +2309,7 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
 
 @media only screen and (max-width: 575px) {
   .service-lest-item {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
@@ -5040,6 +5040,9 @@ p.sm-title-block {
 @media only screen and (max-width: 786px) {
   .logo-box-inner img {
     width: 30% !important;
+  }
+  .steps_{
+    display: none;
   }
 }
 
