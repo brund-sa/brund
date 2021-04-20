@@ -5037,12 +5037,35 @@ p.sm-title-block {
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
   .logo-box-inner img {
     width: 30% !important;
   }
   .steps_{
     display: none;
+  }
+
+  .service-description {
+    
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .service-lest-item {
+    padding: 2px 30px;
+    border: none;
+  }
+
+  .service-description p {
+    display: none;
+  }
+
+  .service-description h4 {
+    color: #fff;
+  }
+
+  #service__ {
+    background: #ef4d2a;
   }
 }
 
